@@ -16,7 +16,7 @@ object RetrofitObject {
     private val WRITE_TIMEOUT: Long = 10 // Sec
     private val READ_TIMEOUT: Long = 10 // Sec
 
-    var baseUrl: String = "http://api.github.com"
+    var baseUrl: String = "https://api.github.com"
 
     fun generateRetrofit(app: Application): Retrofit {
         val okHttpClient = generateOkHttpClient(app)

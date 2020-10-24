@@ -1,11 +1,13 @@
 package c.gingdev.githubproj.constracts
 
 import c.gingdev.githubproj.MainActivity
+import c.gingdev.githubproj.retrofit.model.UserModel
+import c.gingdev.githubproj.retrofit.model.UserRepoModel
 
 interface Constract {
     interface view {
-        fun responseUser()
-        fun responseUserRepo()
+        fun responseUser(userModel: UserModel)
+        fun responseUserRepo(userRepoModel: List<UserRepoModel>)
     }
 
     interface presenter {
